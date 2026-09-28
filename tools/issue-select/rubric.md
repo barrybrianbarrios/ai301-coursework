@@ -1,0 +1,16 @@
+# Rubric: is this a good first issue?
+
+## Checks
+
+| Check | Evidence | Pass condition | Weight |
+|---|---|---|---|
+| Project viability | Repo-facts block: archived status, last default-branch commit dates, recent releases, maintainer first-response sample, and contribution policy. | Pass if the repository is not archived and has affirmative evidence of current maintenance, such as recent meaningful default-branch commits or a recent release, and the contribution policy permits AI-assisted or AI-generated contributions. Fail if the repository is archived, lacks recent meaningful development activity, has affirmative evidence that maintainers have stopped supporting contributions, or its stated contribution policy prohibits AI-generated code/documentation. Missing maintainer responses in a sample, by itself, is not evidence that an otherwise actively maintained repository is abandoned. | required |
+| Newcomer scope | Issue body and comment thread: requested change, expected result, implementation discussion, maintainer clarification, labels, breadth of the requested work, evidence that the project wants the proposed change, and history of previous attempts. Also inspect linked PRs in the repo-facts block. | Pass if the issue identifies one concrete outcome that a newcomer can reasonably investigate and work toward. Several specifically named files, components, examples, or fixes may still constitute one bounded task when they serve the same outcome. Wording such as "for example," "including," "etc.," "consider," "additional suggestions," or explicitly lower-priority ideas does not by itself expand the required scope. When the issue identifies a concrete bug or desired outcome and separately suggests possible causes, fixes, or optimizations, judge the required outcome rather than treating every suggestion as mandatory. A maintainer-applied `good first issue` or equivalent newcomer label is strong positive evidence that the scope is suitable, but it does not override the failure conditions below. Fail if the required work is genuinely open-ended or codebase-wide, is a tracking/umbrella issue containing independent tasks rather than one coherent outcome, requires broad architectural redesign, has a long pattern of repeated contributor claims or implementation attempts abandoned or closed without the requested change landing, or proposes new product surface without evidence of project buy-in such as maintainer authorship/endorsement, an accepted project label, or roadmap evidence. | required |
+| Available | Issue body and comment thread plus repo-facts assignment and linked-PR information. | Pass if there is no evidence another contributor is currently working on the issue. Fail if the issue is currently assigned or explicitly claimed, or an active pull request is already addressing it. Historical claims and closed or abandoned PRs alone do not fail this check; consider them under Newcomer scope when they reveal unresolved complexity. | required |
+
+## Verdict rule
+
+Accept if every required check passes. Reject if any required check fails.
+Treat unclear as fail only when the missing evidence is necessary to establish
+a required condition. Do not mark a check unclear merely because optional
+supporting evidence, such as exact implementation instructions, is absent.
