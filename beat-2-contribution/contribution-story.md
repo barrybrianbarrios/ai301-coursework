@@ -55,10 +55,9 @@ happened; these entries are the toolkit's own timeline.
 All four entries are graded. Keep every heading below, and fill each
 one in the week it belongs to.
 
-**Unit 5: [one line on the tool work]**
+**Unit 5: Adapted my issue scout to find and grade public pytest issues**
 
-[2-4 sentences: what you built (the scout, your strategy), what broke
-or fell short, what changed because of it.]
+I adapted my issue-selection skill to search public Python repositories for pytest issues and rank unassigned issues with fewer comments first. In my first scan, 47 results tied on those criteria, and one unassigned issue already had an open PR. I recorded both limitations in my scan notes and used the scout to grade two picks from the course site.
 
 **Unit 6: [one line on the tool work]**
 
